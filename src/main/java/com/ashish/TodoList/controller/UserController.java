@@ -15,6 +15,7 @@ public class UserController {
     @RequestMapping(method = RequestMethod.POST, value="/posts")
     public String addPost(@RequestBody String data) throws JsonProcessingException
     {
+        System.out.println("a");
         Users user = new ObjectMapper().readValue(data, Users.class);
         userService.addPost(user);
         String response ="{\"success\":true,\"message\":\"Post has been added successfully\"}";
@@ -26,6 +27,7 @@ public class UserController {
     @RequestMapping(method = RequestMethod.GET, value="/posts")
     public List<Users> getPost()
     {
+        System.out.println("ppppp");
         return userService.getAllPost();
     }
     @DeleteMapping("/posts/{id}")
