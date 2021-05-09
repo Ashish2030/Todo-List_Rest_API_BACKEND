@@ -10,11 +10,6 @@ public class Users {
     private Integer id;
     private String name;
     private String number;
-
-
-
-
-
     private String email;
 
     public Users() {
