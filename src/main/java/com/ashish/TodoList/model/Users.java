@@ -11,25 +11,12 @@ public class Users {
     private String name;
     private String number;
 
-    public String getAge() {
-        return age;
-    }
 
-    public void setAge(String age) {
-        this.age = age;
-    }
 
-    public String getAddress() {
-        return address;
-    }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
 
     private String email;
-    private String age;
-    private String address;
+
     public Users() {
         super();
     }
