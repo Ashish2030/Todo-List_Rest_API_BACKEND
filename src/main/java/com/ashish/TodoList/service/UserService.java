@@ -8,7 +8,7 @@ import java.util.List;
 @Service
 public class UserService
 {
-    //getAllPosts, getPost, addPost, updatePost, deletePost
+    //getAllPosts, getPost, addPost, updatePost, deletePost;
 
     @Autowired
     private UserRepository userRepository;
